@@ -1,0 +1,62 @@
+//	--------------------------------------------------
+//	Listas
+//  --------------------------------------------------
+//Con bullets
+ul {
+	padding: 0;
+	li {
+		list-style: none;
+		position: relative;
+		padding-left: 10px;
+		&:before {
+			content: "• ";
+			color: @color-secondary;
+			position: absolute;
+			left: 2px;
+		}
+	}
+	
+	&.list-inline{
+		
+		li{
+			padding-left: 0;
+			display: inline-block;
+			&:before {
+				position: static;
+				left: auto;
+			}
+			
+		}
+	}
+}
+
+
+
+//Sin bullets
+ul.list-unstyled li:before,
+ul.list-icons li:before
+{ content:''; display: none  }
+
+
+//Con Iconos
+.list-icons{
+	
+	> * {display: table; position: relative }
+	
+	&.lg-icons > *{
+		padding-left: @icon-lg+@icon-lg/2*1px; min-height:@icon-lg*1px; 
+	}
+	&.md-icons > *{
+		padding-left: @icon-md+@icon-md/2*1px; min-height:@icon-md*1px;
+	}
+	&.sm-icons > *{
+		padding-left: @icon-sm+@icon-sm/2*1px; min-height:@icon-sm*1px;
+	}
+	&.xs-icons > *{
+		padding-left: @icon-xs+@icon-xs/2*1px; min-height:@icon-xs*1px;
+	}
+	
+	> * > div.text{ display: table-cell; vertical-align: middle }
+	.icon { position: absolute; left: 0; top: 0; text-align: center }
+	
+}

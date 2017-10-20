@@ -1,0 +1,25 @@
+//	--------------------------------------------------
+//	Avisos de error
+//  --------------------------------------------------
+
+.alert {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 10px;
+
+  a {
+    font-weight: @alert-link-font-weight;
+  }
+
+  // Evitamos margens y padings que descuadren
+  *:last-child{
+	  margin-bottom: 0;
+	  padding-bottom: 0;
+  }
+}
+
+
+.alert-success{ background: @color-success }
+.alert-info{ background: @color-info }
+.alert-warning{ background: @color-warning }
+.alert-danger{ background: @color-danger }

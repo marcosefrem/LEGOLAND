@@ -1,0 +1,11 @@
+{
+	"lessPath": "html/less",
+	"cssPath": "html/css",
+	"jsPath": "html/js",
+	"svgPath": "html/svg",
+	"imgPath": "html/img",
+	"imgUserPath": "html/img",
+	"tplPath": "html/src",
+	"tpl": "html",
+	"web": "http://localhost/Lego/html/"
+}

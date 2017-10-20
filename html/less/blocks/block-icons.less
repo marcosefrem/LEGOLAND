@@ -1,0 +1,87 @@
+//	----------------------------------------------------------------------------------------------------
+//
+//	 Bloque de ejemplo, borrar
+//
+//  ----------------------------------------------------------------------------------------------------
+
+.block-icons{
+	li{
+
+		display: block;
+		list-style: none;
+		margin-bottom: 15px;
+		list-style: none;
+		cursor: pointer;
+		position: relative;
+		&:before{
+			display: none;
+		}
+		.content{
+			width: 100%;
+			height: 180px;
+			background: @color-grey-soft;		
+			display: block;
+	
+		}
+		
+		[class*= icon- ]{
+			display: block;
+			margin: auto;
+		}
+		&[class*= col- ]{
+			padding-left: 7.5px;
+			padding-right: 7.5px;
+		}		
+	
+		&:hover{
+			.custom-dropdown{
+				display: block;
+			}
+		}	
+		.custom-dropdown{
+			display: none;
+			-webkit-box-shadow: 4px 11px 60px 3px rgba(0,0,0,0.1);
+			-moz-box-shadow: 4px 11px 60px 3px rgba(0,0,0,0.1);
+			box-shadow: 4px 11px 60px 3px rgba(0,0,0,0.1);		
+			z-index: @zindex-dropdown;
+			background: @color-white;
+			position: absolute;
+			text-align: left;
+			width: 100%;
+			padding: 15px;
+			left: 0px;
+			top:100%;
+			&:before{
+				width: 0;
+				height: 0;
+				border-style: solid;
+				border-width: 0 25px 20px 25px;
+				border-color: transparent transparent @color-white transparent;
+				content: "";
+				position: absolute;
+				top:-20px;
+				left: 0;
+				right: 0;
+				display: block;
+				margin: auto;			
+			}
+
+			li{
+				padding-left: 15px;
+				width: auto;
+				height: auto;
+				position: relative;
+				margin-bottom: 15px;
+				&:last-child{
+					margin-bottom: 0px;
+				}
+				&:before{
+					display: block;
+					content: "• ";
+					color:@color-secondary;
+				}
+			}
+	}
+	
+	}
+}

@@ -1,0 +1,63 @@
+//	----------------------------------------------------------------------------------------------------
+//
+//	 block-main
+//
+//  ----------------------------------------------------------------------------------------------------
+
+
+.block-main{
+	background: url('../img/bg-blocks.jpg') repeat-x;
+	.banner-hero{
+		display: block;
+		margin: auto;
+		width: 100%;
+		max-width: 1176px;
+		img{
+			width: 100%;
+		}
+	}
+	.nav{
+		background: rgba(216,0,1,1);
+		background: -moz-linear-gradient(top, rgba(216,0,1,1) 0%, rgba(175,0,3,1) 100%);
+		background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(216,0,1,1)), color-stop(100%, rgba(175,0,3,1)));
+		background: -webkit-linear-gradient(top, rgba(216,0,1,1) 0%, rgba(175,0,3,1) 100%);
+		background: -o-linear-gradient(top, rgba(216,0,1,1) 0%, rgba(175,0,3,1) 100%);
+		background: -ms-linear-gradient(top, rgba(216,0,1,1) 0%, rgba(175,0,3,1) 100%);
+		background: linear-gradient(to bottom, rgba(216,0,1,1) 0%, rgba(175,0,3,1) 100%);
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='@color-red-default', endColorstr='@color-red-dark', GradientType=0 );		
+		ul{
+			display: inline-block;
+			float: right;	
+			padding: 0;
+			margin: 0;		
+		}
+		li{
+			display: inline-block;
+			padding-left: 12.5px;
+			padding-right: 12.5px;
+			margin-left: -2.5px;
+			margin-right: -2.5px;
+			&:hover,
+			&.active{
+				background: @color-white;
+				a{
+					color:@color-red-dark;
+				}
+			}
+			
+			&:before{
+				display: none;
+			}
+			a{
+				color:@color-white;
+				text-decoration: none;
+				padding-top: 10px;
+				padding-bottom: 10px;
+				padding: 10px;
+				display: block;
+			}
+		}
+	}
+
+
+}

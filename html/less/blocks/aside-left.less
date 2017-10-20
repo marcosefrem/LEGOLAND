@@ -1,0 +1,124 @@
+.aside-left {
+	max-width: 				225px;
+	padding-top: 			40px;
+	@media (max-width: @screen-max-xs) {
+		max-width: 			none;
+		padding-top:		10px;
+	}
+	.btn {
+		margin-bottom: 		10px;
+	}
+	.nav-aside {
+		margin-bottom: 		15px;
+		ul {
+			margin: 		0;
+			li {
+				padding:	0;
+				a {
+					border-bottom:		1px solid @color-grey-border;
+					color:				@color-brand;
+					display: 			block;
+					height: 			31px;
+					line-height: 		30px;
+					text-decoration: 	none;
+					padding-left: 2.5px;
+					img {
+						margin-right: 	5px;
+					}
+					&:focus,
+					&:active,
+					&:hover{
+						background: @color-brand;
+						color:@color-white;
+						.caret-thin{
+							color:@color-white;
+
+							&:before{
+								    border-left: 1px solid @color-white;
+									border-top: 1px solid @color-white;
+								color:@color-white;
+							}
+						}
+					}
+					
+				}
+			}
+		}
+	}
+	a{
+		.caret-thin {
+			position: absolute; 
+			right:8px;
+			top: 8px;
+		}
+	
+		+ .collapse{
+			ul{
+			}
+			
+		}
+	
+	}
+	
+	.cnt-buscador {
+		.btn-transparent {
+			border-bottom: 			1px solid @color-grey-soft;
+			color: 					@color-brand;
+			font-size: 				14px;
+			margin: 				0;
+			padding-left: 			9px;
+			text-align: 			left;
+			&:focus {
+				outline: 			none;
+			}
+			.caret-thin {
+				float: 				right;
+				margin-right: 		9px;
+				position: 			relative;
+				top: 				15px;
+			}
+		}
+		.buscador {
+			border: 				1px solid @color-grey-soft;
+			border-top: 			0;
+			padding: 				15px 8px 10px 8px;
+			.form {
+				.form-group {
+					margin-bottom: 		5px;
+					position: 			relative;
+					&.date {
+						&:after {
+							background-image: 	url(../img/icon-calendar.png);
+							bottom: 			8px;
+							content: 			'';
+							display: 			block;
+							height: 			15px;
+							position: 			absolute;
+							right:				8px;
+							width: 				15px;
+							pointer-events: 	none;
+						}
+					}
+				}
+				label {
+					color: 				@color-brand;
+					font-weight: 		normal;
+				}
+				.form-control {
+					background-color: 	@color-grey-softest;
+					border-color: 		transparent;
+					font-size: 			12px;
+					height: 			30px;
+				}
+			}
+			.row {
+				margin-left: 			-3px;
+				margin-right: 			-3px;
+			}
+			[class^="col-"] {
+				padding-left: 			3px;
+				padding-right: 			3px;
+			}
+		}
+	}
+}

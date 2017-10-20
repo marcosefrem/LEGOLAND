@@ -1,0 +1,257 @@
+//	--------------------------------------------------
+//	Textos, titulos y enlaces
+//  --------------------------------------------------
+
+//Selección de textos
+::-moz-selection { //* Code for Firefox
+    color: @color-white;
+    background: @color-text;
+}
+
+::selection {
+    color: @color-white;
+    background: @color-text;
+}
+
+//Base para calcular las fuentes en REMs
+html {
+  font-size: 62.5%; // 1.6rem = 16px, 20rem = 20px, etc... 
+	@media (max-width: @screen-max-xs) {
+		font-size: 60%; // Reducimos el tamaño en móvil.
+	}	
+  
+}
+
+//
+// Para personalizar una fuente primero ponermos una de sistema similar
+//y despues dentro de un html.fonts-loaded añadimos la personalizada con font face.
+//
+
+
+body {
+	margin: 0;
+	font-size: 1.4rem;
+	font-family: 'Raleway', sans-serif;
+	font-family: 16px;
+	//font-family: 'Lato', 'Arial';
+	color: @color-text;
+	font-smoothing: antialiased;
+	font-weight: 300;
+}
+
+
+html.fonts-loaded{
+	body{
+		font-family: 'Raleway', sans-serif;
+	}
+}	
+	
+
+//Reset a los Hx para que no tengan valores, se les pasará mediante clases
+h1, h2, h3, h4, h5, h6 { font-size: inherit;  margin: 0; width: auto; color: @color-text }
+
+.h1,
+.h2,
+.h3,
+.h4,
+.h5,
+.h6 {
+	display: block;
+	margin: 0;
+	text-decoration: none;
+	font-size: inherit;
+	margin: 0;
+	width: auto;
+	color: @color-text;
+}
+  
+//	--------------------------------------------------
+//	Escala tipográfica Primaria
+//  --------------------------------------------------
+    	   
+.h1 { font-size: 5rem; line-height:3.6rem; font-family: 'Raleway'; font-weight: normal; color: @color-text; padding-bottom: 30px; font-weight: 300; }
+.h2 { font-size: 3rem; line-height:3rem; font-family: 'Raleway'; color: @color-text; padding-bottom: 20px; font-weight: 300; }
+.h3 { font-size: 1.8rem; line-height:1.8rem; font-family: 'Raleway'; color: @color-text; padding-bottom: 10px; font-weight: 100; }
+.h4 { font-size: 1.8rem; line-height:1.8rem; font-family: 'Raleway'; color: @color-text; padding-bottom: 10px; font-weight: 300; }
+.h5 { font-size: 1.2rem; line-height:1.2rem; font-family: 'Raleway'; color: @color-text; padding-bottom: 10px; font-weight: 300; }
+.h6 { font-size: 1.1rem; line-height:1.1rem; font-family: 'Raleway'; color: @color-text; padding-bottom: 10px; font-weight: 300; }
+
+
+@media (max-width: @screen-max-xs) {
+	.h1 { font-size: 5rem; line-height:4.6rem; font-family: 'Raleway'; font-weight: normal; color: @color-text; padding-bottom: 30px; font-weight: 300; }
+	.h2 { font-size: 3rem; line-height:3rem; font-family: 'Raleway'; color: @color-text; padding-bottom: 20px; font-weight: 300; }
+	.h3 { font-size: 1.8rem; line-height:1.8rem; font-family: 'Raleway'; color: @color-text; padding-bottom: 10px; font-weight: 100; }
+	.h4 { font-size: 1.8rem; line-height:1.8rem; font-family: 'Raleway'; color: @color-text; padding-bottom: 10px; font-weight: 300; }
+	.h5 { font-size: 1.2rem; line-height:1.2rem; font-family: 'Raleway'; color: @color-text; padding-bottom: 10px; font-weight: 300; }
+	.h6 { font-size: 1.1rem; line-height:1.1rem; font-family: 'Raleway'; color: @color-text; padding-bottom: 10px; font-weight: 300; }
+
+}
+
+
+html.fonts-loaded{
+	   
+	.h1 { font-family: 'Raleway'; }
+	.h2 { font-family: 'Raleway'; }
+	.h3 { font-family: 'Raleway'; }
+	.h4 { font-family: 'Raleway'; }
+	.h5 { font-family: 'Raleway'; }
+	.h6 { font-family: 'Raleway'; }
+
+}
+
+
+//Titulares con enlace
+a.h1,
+a.h2,
+a.h3,
+a.h4,
+a.h5,
+a.h6{
+	text-decoration: none;
+	&:hover{ }
+}
+
+//Parrafos
+p {
+	padding-bottom: 20px;
+	margin: 0;
+	line-height: 140%;
+}
+
+p.lead {
+	// margin-bottom: 0;
+	// font-size: 1.8rem;
+	// font-weight: lighter;
+	color:			@color-brand;
+	text-align: 	justify;
+}
+
+small, .small{
+	font-size: 1.0rem;
+	font-family: 'Raleway';
+}
+
+//	--------------------------------------------------
+//	Links
+//  --------------------------------------------------
+	a.link-primary, a.link-primary:link, a.link-primary:visited, button.link-primary{
+		transition:.2s;
+		
+		&:focus{
+			outline: none;
+		}
+		
+		&:active,
+		&.active,
+		&:hover{
+			transition: .2s;
+
+		}
+				
+		
+	}
+	
+	a.link-secondary, a.link-secondary:link, a.link-secondary:visited, button.link-secondary{
+		transition:.2s;
+		
+		&:focus{
+			outline: none;
+		}
+		
+		&:active,
+		&.active,
+		&:hover{
+			transition: .2s;
+
+		}
+		
+	}
+	
+	a.link, a.link:link, a.link:visited, button.link{
+		transition:.2s;
+		&:focus{
+			outline: none;
+		}
+		
+		&:active,
+		&.active,
+		&:hover{
+			transition: .2s;
+
+		}
+		
+		
+	}
+	
+	//Enlaces normales
+	a, a:link, a:visited, button.link{
+		transition:.2s;
+		
+		&:focus{
+
+		}
+		
+		&:active,
+		&.active,
+		&:hover{
+			transition: .2s;
+
+		}
+		
+		
+	}
+	
+	
+	a.link-inner, a.link-inner:link, a.link-inner:visited, button.link-inner{
+		transition:.2s;
+		
+		&:focus{
+			outline: none;
+		}
+		
+		&:active,
+		&.active,
+		&:hover{
+			transition: .2s;
+
+		}
+		
+		
+	}
+	
+	// Reset para botones con aspecto de link
+	button[class*="link-"] {
+		border: none;
+		background: none;
+		padding: 0;
+	}
+
+
+.title-1 {
+	background-image:		url(../img/title-1-bg.png);
+	background-repeat: 		no-repeat;
+	background-size: 		cover;
+	margin-bottom: 			30px;
+	min-height: 			152px;
+	padding-top: 			65px;
+	text-align: 			center;
+	width: 					100%;
+	.h1 {
+		color:				@color-white;
+		padding-bottom: 	0;
+	}
+}
+.title-2 {
+	background-image:		url(../img/title-2-bg.png);
+	background-repeat: 		no-repeat;
+	background-size: 		cover;
+	margin-bottom: 			30px;
+	min-height: 			152px;
+	padding-top: 			65px;
+	text-align: 			center;
+	width: 					100%;
+	.h1 {
+		color:				@color-white;
+		padding-bottom: 	0;
+	}
+}

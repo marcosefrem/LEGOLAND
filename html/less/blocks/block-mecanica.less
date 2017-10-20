@@ -1,0 +1,81 @@
+//	----------------------------------------------------------------------------------------------------
+//
+//	 Bloque de mecanica
+//
+//  ----------------------------------------------------------------------------------------------------
+
+
+.block-mecanica	{
+	
+	min-height:200px;
+	
+	&.logged{
+		min-height: inherit;
+		text-align: left;
+		.step{
+			display: inline-block;
+			margin-top: 15px;
+			margin-left: 15px;
+			margin-right: 10px;
+
+			vertical-align: middle;
+		}
+		> div{
+			position: relative;
+			top: auto;
+			transform: translateY(0%);
+			-webkit-transform: translateY(0%);
+			left: auto;
+			right: auto		
+		}	
+		
+		.h3{
+			font-size: 18px;
+			max-width: 70%;
+			display: inline-block;
+			margin: auto;
+			text-align: left;
+			vertical-align: middle;
+			line-height: 18px;
+			margin-top: 5px;
+			
+			@media (max-width: @screen-max-sm) {
+				height: 70px;
+				margin-left:15px;	
+			}				
+			
+
+		}	
+		
+	}
+	
+	> div{
+		position: absolute;
+		top: 50%;
+		transform: translateY(-50%);
+		-webkit-transform: translateY(-50%);
+		left: 0;
+		right: 0		
+	}
+	
+	.step{
+		background: url('../img/icons/icon-block.png');
+		width: 51px;
+		height: 40px;
+		background-repeat: no-repeat;
+		font-size: 40px;
+		display: block;
+		background-position: center center;
+		text-align: center;
+		margin: auto;
+		vertical-align: top;
+		line-height: 35px;
+		margin-bottom: 15px;
+	}
+	.h3{
+		font-size: 25px;
+		max-width: 100%;
+		display: block;
+		margin: auto;
+	}
+}

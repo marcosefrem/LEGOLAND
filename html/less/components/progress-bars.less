@@ -1,0 +1,19 @@
+//	--------------------------------------------------
+//	Barras de progreso
+//  -------------------------------------------------- 
+
+.progress {
+  overflow: hidden;
+  height: @line-height-computed;
+  margin-bottom: @line-height-computed;
+}
+
+// Bar of progress
+.progress-bar {
+  float: left;
+  width: 0%;
+  height: 100%;
+  text-align: center;
+  background-color: @color-success;
+  .transition(width .6s ease);
+}

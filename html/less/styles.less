@@ -1,0 +1,140 @@
+//Bootstrap
+// Core variables and mixins
+@import "bootstrap/variables.less";
+@import "bootstrap/mixins.less";
+
+//// Reset and dependencies
+@import "bootstrap/normalize.less";
+@import "bootstrap/print.less"; //+1,25k OK
+
+//// Utility classes
+@import "bootstrap/utilities.less"; // +1,5k OK
+@import "bootstrap/responsive-utilities.less"; // +5k OK
+// 8,5kKB
+
+//
+// Los archivos comentados con 4 / no se han de usar, 
+// el resto se pueden comentar si no son necesarios
+//
+
+// Core CSS
+@import "bootstrap/scaffolding.less"; // +2k -> +1k
+@import "bootstrap/type.less"; // +5,5k -> +1k
+////@import "bootstrap/code.less"; // +1,66k
+@import "bootstrap/grid.less"; // +11,5k -> +6,5k
+@import "bootstrap/tables.less"; // +9k -> +3k
+@import "bootstrap/forms.less"; // +11k -> +8k
+@import "bootstrap/buttons.less"; //+9,5k -> 0,2k
+
+// Components
+@import "bootstrap/component-animations.less"; //+1,5k
+@import "bootstrap/dropdowns.less"; //+3,5k -> +0,5k
+@import "bootstrap/button-groups.less"; //+4,5kb
+@import "bootstrap/input-groups.less"; // +4kb, requiere forms
+@import "bootstrap/navs.less"; //+4,5kb -> +1k
+@import "bootstrap/navbar.less"; // +13k, requiere forms
+@import "bootstrap/breadcrumbs.less"; // +1k
+////@import "bootstrap/pagination.less"; //+3k
+////@import "bootstrap/pager.less"; // +1,5k
+////@import "bootstrap/labels.less"; //+2k
+////@import "bootstrap/badges.less"; // +1,5k
+////@import "bootstrap/jumbotron.less"; // +1,5k
+////@import "bootstrap/thumbnails.less"; // +1,5k
+@import "bootstrap/alerts.less"; // +2k -> +0,25k
+////@import "bootstrap/progress-bars.less"; // +5,5k
+@import "bootstrap/media.less"; //+1,5k
+////@import "bootstrap/list-group.less"; // +5k
+////@import "bootstrap/panels.less"; //+13k
+@import "bootstrap/responsive-embed.less"; //+0,5k
+//@import "bootstrap/wells.less"; // +1k
+@import "bootstrap/close.less"; // +1k
+
+// Components w/ JavaScript
+@import "bootstrap/modals.less"; // +3k -> 1,25k
+@import "bootstrap/tooltip.less"; // +3k -> 1,5k
+@import "bootstrap/popovers.less"; // +3k
+@import "bootstrap/carousel.less"; // +6k
+
+
+
+
+//Mixins, variables, etc.
+@import "imports/mixins.less";
+@import "imports/colours.less";
+@import "imports/svg64.less";
+
+@import "imports/fixes.less"; //+2k
+@import "imports/helpers.less"; // +7k, requiere colours
+
+//153,5
+
+//Plugins
+@import "plugins/lesshat-prefixed.less";
+//@import "plugins/bootstrap-select/bootstrap-select.less"; // +6k
+//@import "plugins/bootstrap-slider.less"; // +4,5k
+@import "plugins/animate.less";
+//@import "plugins/adn-parallax.less"; //+0,5k
+@import "plugins/datepicker3.less"; // +40k
+//@import "plugins/tabdrop.less"; // +0,2k
+@import "plugins/offcanvas.less"; // +2k
+//@import "plugins/jquery.fullpage.less"; // +4k
+
+
+//	----------------------------------------------------------------------------------------------------
+//
+//	 Components Custom
+//
+// -----------------------------------------------------------------------------------------------------
+@import "components/fonts.less";
+@import "components/icons.less";
+@import "components/forms.less";
+@import "components/tabs.less";
+@import "components/offcanvas.less";
+@import "components/accordions.less";
+@import "components/buttons.less";
+@import "components/texts.less";
+@import "components/lists.less";
+@import "components/progress-bars.less";
+@import "components/breadcrumbs.less";
+@import "components/pagination.less";
+@import "components/tables.less";
+@import "components/dropdowns.less";
+@import "components/modals.less";
+@import "components/alerts.less";
+@import "components/tooltips.less";
+
+
+// -------------------------------------------------- 
+//	Blocks
+// --------------------------------------------------
+@import "blocks/blocks-index.less";
+@import "blocks/block-screen.less";
+@import "blocks/block-icons.less";
+@import "blocks/block-form.less";
+@import "blocks/block-main.less";
+@import "blocks/block-video-youtube.less";
+@import "blocks/block-loged.less";
+@import "blocks/block-mecanica.less";
+@import "blocks/block-order.less";
+@import "blocks/block-thumb-video.less";
+@import "blocks/block-pagination.less";
+@import "blocks/block-content.less";
+@import "blocks/block-prize.less";
+@import "blocks/block-upload";
+@import "blocks/block-tags";
+//	--------------------------------------------------
+//
+//	Páginas
+//
+// ---------------------------------------------------
+
+@import "pages/pages-index.less";
+
+
+
+//	--------------------------------------------------
+//
+//	Media Print
+//
+// ---------------------------------------------------
+@import "imports/print.less";

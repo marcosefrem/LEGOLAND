@@ -1,0 +1,34 @@
+</body>
+</html>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script>
+	
+	
+		$('[data-id-scroll]').on('click',function(){
+
+			//ID del elemento donde queremos ir
+			scrollToID = $(this).attr('data-id-scroll');
+			
+			
+			//movemos scroll
+			moveToOffset = $('#'+scrollToID).offset();
+			$("html, body").animate({scrollTop: moveToOffset.top - 90, useTranslate3d:true }, 700);			
+			$('.navbar-toggle.right').removeClass('clicked');
+			$('#off-canvas-right').removeClass('visible');
+				
+		});
+
+
+
+		$('.navbar-toggle.right').on('click',function(){
+			//$(this).toggleClass('clicked');
+			$('#off-canvas-right').toggleClass('visible');
+				
+		});
+
+
+		
+		
+	
+</script>

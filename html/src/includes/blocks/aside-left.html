@@ -1,0 +1,96 @@
+<div class="aside-left">
+
+	
+	<button role="button" class="btn btn-default btn-lg btn-block">
+		Nueva petición
+	</button>
+	<nav class="nav-aside">
+		<ul class="list-unstyled">
+			<li>
+				<a href="#">
+					<img src="img/icon-recibidos.png" alt="">
+					Recibidos
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/icon-enviados.png" alt="">
+					Enviados
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/icon-check-soft.png" alt="">
+					Validaciones
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<img src="img/icon-delegaciones.png" alt="">
+					Delegaciones
+				</a>
+			</li>
+			<li>
+				<a href="#">
+					<i class="fa fa-dashboard text-color-default"></i>
+					Delegaciones
+				</a>
+			</li>			
+			<li>
+				<a href="#" class="collapsed" data-toggle="collapse" data-target="#visibles" aria-expanded="false" aria-controls="visibles">
+					<img src="img/icon-eye.png" alt="">
+					Visibles <span class="caret-thin"></span>
+				</a>
+				<div id="visibles" class="collapse">
+					<ul>
+						<li><a href="">Desplegable</a></li>
+						<li><a href="">Desplegable2</a></li>
+						<li><a href="">Desplegable3</a></li>
+						<li><a href="">Desplegable4</a></li>
+						<li><a href="">Desplegable5</a></li>
+					</ul>
+				</div>
+			</li>
+		</ul>
+	</nav>
+	<div class="cnt-buscador">
+		<button role="button" class="btn btn-transparent btn-block collapsed" data-toggle="collapse" data-target="#buscador" aria-expanded="false" aria-controls="buscador">
+			Buscador <span class="caret-thin"></span>
+			<!-- Buscador <span class="caret"></span> -->
+		</button>
+		<div id="buscador" class="buscador collapse">
+			<form class="form">
+				<div class="form-group">
+					<label for="inp-from">Remitente</label>
+					<input type="type" name="inp-from" id="inp-from" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="inp-subject">Asunto</label>
+					<input type="type" name="inp-subject" id="inp-subject" class="form-control">
+				</div>
+				<div class="row">
+					<div class="col-sm-6">
+						<div class="form-group date">
+							<label for="inp-date-from">Fecha de alta</label>
+							<input type="type" name="inp-date-from" id="inp-date-from" class="form-control js-datepicker">
+						</div>
+					</div>
+					<div class="col-sm-6">
+						<div class="form-group date">
+							<label for="inp-date-to">Hasta</label>
+							<input type="type" name="inp-date-to" id="inp-date-to" class="form-control js-datepicker">
+						</div>
+					</div>
+				</div>
+				<div class="form-group">
+					<label for="inp-document">Tipo de documento</label>
+					<input type="type" name="inp-document" id="inp-document" class="form-control">
+				</div>
+				<div class="form-group">
+					<label for="inp-country">Estado</label>
+					<input type="type" name="inp-country" id="inp-country" class="form-control">
+				</div>
+			</form>
+		</div>
+	</div>
+</div>

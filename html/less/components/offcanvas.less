@@ -1,0 +1,70 @@
+// -------------------------------------------------- 
+//	Nav off canvas
+// --------------------------------------------------
+
+@media (max-width: @screen-max-sm) {
+	button.navbar-toggle {
+		display: 	none;
+	}
+}
+//Cambiar XS por SM si lo queremos en iPad
+@media (max-width: @screen-max-xs) {
+		
+	//Estilos del botón	
+	button.navbar-toggle {
+		display: 	block;
+	}
+	
+	//Estilos del menu
+	.off-canvas {
+		background-color: 		@color-white;
+		ul {
+			li {
+				a {
+					border-bottom: 		1px solid @color-grey-softest;
+					color:				@color-grey;
+					display: 			block;
+					line-height: 		36px;
+					text-decoration: 	none;
+				}
+			}
+		}
+		//Version izquierda
+		&[data-side="left"]{
+
+		}		
+
+		//Version derecha
+		&[data-side="right"]{
+
+		}		
+		
+		//Version top
+		&[data-side="top"]{
+
+		}		
+		
+		//Versión bottom
+		&[data-side="bottom"]{
+
+		}		
+	}
+
+
+	//Estilos de la capa semitransparente
+	.canvas-wrap { 
+
+	}
+	
+	//Tipos de animaciones
+
+	//Opción 1. El body se oculta para mostrar el off-canvas
+	//@import "../plugins/offcanvas/offcanvas-move.less";
+	
+	//Opcion 2. El off-canvas aparece por encima del body
+	@import "../plugins/offcanvas/offcanvas-overlay.less";
+	
+	//Opcion 3. El off-canvas desplaza al body excepto al header (Añadir clase hide-canvas-in a elementos que no sean el main)
+	//@import "../plugins/offcanvas/offcanvas-overlay-move.less";
+
+}

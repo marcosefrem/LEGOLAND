@@ -1,0 +1,218 @@
+// -------------------------------------------------- 
+//	Header
+// --------------------------------------------------
+
+//Usar siempre la variable para darle altura en mobile.
+@mobileHeaderHeight:60px;
+
+header{
+	background: rgb(0, 0, 0); /* Fall-back for browsers that don't	support rgba */
+	background: rgba(0, 0, 0, 0);
+	transition: all 0.8s ease;	
+	padding-bottom: 20px;
+	&.affix-top{
+		position: fixed;
+		width: 100%;
+	}
+	&.affix{
+		background: rgb(0, 0, 0); /* Fall-back for browsers that don't	support rgba */
+		background: rgba(0, 0, 0, .6);
+	}
+	.dropdown-menu{
+		background: @color-white;
+		li a{
+			height: auto;
+			padding-top:5px;
+			padding-bottom: 5px;
+			border-bottom: 1px solid @color-grey-border;
+		}
+	}
+	.nav .open>a{
+		background: none;
+	}
+	
+	a{
+		text-decoration: none;
+		.logo{
+			font-family: 'Ubuntu', sans-serif;
+		    font-weight: 700;
+		    font-style: normal;
+		    font-size: 25px;
+		    letter-spacing: 0em;
+		    line-height: 1em;
+		    text-transform: uppercase;	
+		    color:@color-secondary;		
+		    margin-top: 35px;
+		}
+	}
+	
+	nav{
+		a{
+			color:@color-white;
+			text-decoration: none;
+			font-family: 'Raleway'; 
+			font-size: 13px;
+			display: inline-block;
+			margin-left: 10px;
+			margin-right: 10px;
+			&:hover{
+				color:@color-secondary;
+			}
+		}
+	}
+
+	
+	@media (max-width: @screen-max-xs) {
+		//height:				@mobileHeaderHeight;
+	}	
+
+	&.affix{
+		width: 				100%;
+		z-index: 			@zindex-navbar-fixed;
+	}
+	&.header-home {
+		padding-bottom: 	35px;
+		padding-top: 		40px;
+	}
+	&.header-inicio {
+		padding-bottom: 	15px;
+		padding-top: 		20px;
+		background: @color-blue-header;
+		
+		img.logo{
+			max-width: 300px;
+		}
+		.btn{
+			top: 10px;
+			display: inline-block;
+			position: relative;
+		}
+		
+		.btn-link{
+			color:@color-white;
+		}
+		
+		
+	}	
+
+	.brand {
+		display: 			block;
+		margin:				0 auto;
+		max-width: 			100%;
+		width: 				234px;
+		@media (max-width: @screen-max-xs) {
+			height: 		40px;
+			text-align: 	center;
+			width: 			auto;
+		}
+		img {
+			display: 		block;
+			width: 			100%;
+			@media (max-width: @screen-max-xs) {
+				margin: 	0 auto;
+				max-height: 100%;
+				width: 		auto;
+			}
+		}
+	}
+
+	.navbar-left {
+		padding-top: 		27px;
+		width: 				100%;
+		@media (max-width: @screen-max-xs) {
+			display: 		none;
+		}
+	}
+	.nav.navbar-nav {
+		margin: 					0;
+		padding: 					0;
+		position: 					relative;
+		width: 						100%;
+		li {
+			padding:				0;
+			a {
+				color:				@color-grey;
+				font-weight: 		bold;
+				text-decoration: 	none;
+				padding:			15px 5px;
+				@media (max-width: @screen-max-sm) {
+					padding:		10px 5px;
+				}
+			}
+			&.left {
+				float: 						left;
+				max-width: 					135px;
+				@media (max-width: @screen-max-sm) {
+					font-size: 				13px;
+				}
+				a {
+					&:hover,
+					&:focus,
+					&.active {
+						background-color: 	transparent;
+						border-top:			2px solid @color-primary;
+					}
+				}
+			}
+			&.right {
+				float: 						right;
+				position: 					relative;
+				top: 						-37px;
+				a {
+					color:					@color-grey-soft;
+					font-size: 				11px;
+					height: 				37px;
+					padding:				0 15px;
+					@media (max-width: @screen-max-sm) {
+						padding: 			0 5px;
+					}
+					&:hover {
+						background-color: 	transparent;
+					}
+					img {
+						margin-right: 		5px;
+						position: 			relative;
+						top: 				-2px;
+					}
+				}
+			}
+		}
+		&:after {
+			border-top: 			1px solid @color-grey-border;
+			content: 				'';
+			display: 				block;
+			position: 				absolute;
+			top:					-1px;
+			width: 					100%;
+		}
+	}
+}
+header .nav.navbar-nav li.right a{
+	cursor: pointer;
+		height: auto;
+		padding-top:5px;
+		padding-bottom: 5px;	
+		
+}
+header .nav.navbar-nav li.right .dropdown-menu a{
+	&:hover{
+		background: @color-grey-border;
+	}		
+}
+header .nav.navbar-nav li.right .collapse a{
+
+			background: @color-white;
+			width: 200px;
+			display: block;
+			white-space: nowrap;
+			border-bottom: 1px solid @color-grey-soft;
+			height: auto;
+			padding: 10px;
+
+			&:hover{
+				background: @color-grey-border;
+			}
+	
+}
+
+	

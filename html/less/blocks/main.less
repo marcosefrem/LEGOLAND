@@ -1,0 +1,57 @@
+// -------------------------------------------------- 
+//	Body
+// --------------------------------------------------
+
+
+//Ocultamos todos los elementos que van a tener animación
+[data-animation-in]{ opacity: 0 }
+[data-animation-in],
+[data-animation-out],
+{
+	animation-duration: .5s
+}
+
+.inicio	{
+	background: url('../img/bg-inicio.jpg');
+	background-size: cover;
+	background-position: center top;
+	width: 100vw;
+	height: 100vh;
+	display: block;
+	margin-top: -104px;
+}
+
+
+
+section{
+	
+	&.home{
+		padding-top: 0px;
+		padding-bottom: 0px;		
+	}
+}
+
+.block-translateY{
+	
+  position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);	
+	left: 0;
+	right: 0;
+		
+}
+.content-logged{
+	padding: 20px;
+	p{
+		font-size: 12px;
+		line-height: 12px;
+	}
+}
+
+.rounded {
+	border-radius: 50%;
+}
+.bordered	{
+	border:2px solid @color-secondary;
+}

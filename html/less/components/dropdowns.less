@@ -1,0 +1,63 @@
+//	--------------------------------------------------
+//	Dropdown
+//  --------------------------------------------------
+
+.caret {
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top:   @caret-width-base solid;
+  border-right: @caret-width-base solid transparent;
+  border-left:  @caret-width-base solid transparent;
+}
+
+.dropdown{
+	.dropdown-menu{		
+		position: absolute;
+		top: 100%;
+		left: 0;
+		z-index: @zindex-dropdown;
+		display: none; // none by default, but block on "open" of the menu
+		float: left;
+		min-width: 160px;
+		padding: 5px 0;
+		margin: 2px 0 0; // override default ul
+		list-style: none;
+		font-size: @font-size-base;
+		text-align: left; // Ensures proper alignment if parent has it changed (e.g., modal footer)
+		background-clip: padding-box;
+		
+		// Aligns the dropdown menu to right
+		//
+		// Deprecated as of 3.1.0 in favor of `.dropdown-menu-[dir]`
+		&.pull-right {
+		right: 0;
+		left: auto;
+		}
+		
+		
+		a {
+			text-decoration: none;
+			font-size: 12px;
+			display: block;
+			padding: 3px 20px;			
+			clear: both;
+		    font-weight: normal;
+		    white-space: nowrap; // prevent links from randomly breaking onto new lines			
+			
+		}
+		
+		li {
+			&:before { display: none }
+			
+		}	
+	}
+	&.open{
+		.dropdown-menu{
+			display: 	block;
+		}
+		
+	}	
+}
