@@ -204,8 +204,62 @@
 			
 			<section>
 				
-				<div class="block-video-youtube">
-					
+				<div class="block-video slider">
+					  <div>
+						<video controls>
+						  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+						  <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+						  Your browser does not support HTML5 video.
+						</video>						  
+												  
+						  
+					  </div>
+					  <div>
+						<video controls>
+						  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+						  <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+						  Your browser does not support HTML5 video.
+						</video>						  
+												  
+						  
+					  </div>
+					  <div>
+						<video controls>
+						  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+						  <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+						  Your browser does not support HTML5 video.
+						</video>						  
+												  
+						  
+					  </div>					  
+					  <div>
+						<video controls>
+						  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+						  <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+						  Your browser does not support HTML5 video.
+						</video>						  
+												  
+						  
+					  </div>					  
+					  <div>
+						<video controls>
+						  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+						  <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+						  Your browser does not support HTML5 video.
+						</video>						  
+												  
+						  
+					  </div>					  
+					  <div>
+						<video controls>
+						  <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+						  <source src="https://www.w3schools.com/html/mov_bbb.ogg" type="video/ogg">
+						  Your browser does not support HTML5 video.
+						</video>						  
+												  
+						  
+					  </div>					  
+					  				  					  
 					
 				</div>
 				
@@ -213,7 +267,6 @@
 				
 				
 			</section>
-			
 			<section>
 				
 				<div class="block-loged text-center">
@@ -489,32 +542,21 @@
 </html>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
+<!-- slick slider --->
+
+<script type="text/javascript" src="js/libraries/slick.min.js"></script>
+<!-- slick slider --->
+
 <script>
 	
-	
-		$('[data-id-scroll]').on('click',function(){
-
-			//ID del elemento donde queremos ir
-			scrollToID = $(this).attr('data-id-scroll');
-			
-			
-			//movemos scroll
-			moveToOffset = $('#'+scrollToID).offset();
-			$("html, body").animate({scrollTop: moveToOffset.top - 90, useTranslate3d:true }, 700);			
-			$('.navbar-toggle.right').removeClass('clicked');
-			$('#off-canvas-right').removeClass('visible');
-				
+		$(document).ready(function(){
+		  $('.slider').slick({
+				centerMode: true,
+				centerPadding: '60px',
+				slidesToShow: 1
+		  });
 		});
-
-
-
-		$('.navbar-toggle.right').on('click',function(){
-			//$(this).toggleClass('clicked');
-			$('#off-canvas-right').toggleClass('visible');
-				
-		});
-
-
+		
 		
 		
 	

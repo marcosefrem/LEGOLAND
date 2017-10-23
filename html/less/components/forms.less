@@ -128,6 +128,9 @@ select.selectpicker{
 		a{
 			text-decoration: none;
 			color:@color-black;
+			display: inline-block;
+			top: 5px;
+			position: relative;
 		}
 	}
 
@@ -176,14 +179,15 @@ select.selectpicker{
 	}
 	//.checkbox input[type=checkbox], .checkbox-inline input[type=checkbox] { display: none;  }
 	.checkbox input[type=checkbox]:checked + label::before, .checkbox-inline input[type=checkbox]:checked + label::before{  
-	    content: ""; 
+	    content: "\f00c";
+	   font-family: 'FontAwesome';
 	    background:@color-white;
 	    background-size: contain;
 	    background-repeat: no-repeat;
 	    font-size: 15px;  
 	    color: @color-text;  
 	    text-align: center;  
-	    line-height: 10px;
+	    line-height: 15px;
 		//top:7px;
 	
 		@media (max-width: @screen-max-sm) {

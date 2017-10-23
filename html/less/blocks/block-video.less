@@ -1,0 +1,82 @@
+//	----------------------------------------------------------------------------------------------------
+//
+//	 block-main
+//
+//  ----------------------------------------------------------------------------------------------------
+
+
+.block-video{
+
+	height: 340px;
+	background:@color-black;
+	position: relative;
+	width: 100%;
+	video{
+		height: 340px;
+		width: 100%;
+	}
+	
+	
+	.slick-prev {
+		position: absolute;
+		left: 0;
+		top:0;
+		bottom:0;		
+		z-index: @zindex-navbar;
+		font-family: FontAwesome;
+		background: none;
+		border:0;
+		text-indent: -3000px;		
+		width: 100px;
+		height: 100px;
+		display: block;
+		margin: auto;			
+		&:before{
+			font-family: FontAwesome;
+			content: "\f053";
+			color:@color-white;
+			font-size: 77px;
+			text-indent: 0px;	
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    display: block;
+		    width: 100px;
+		    height: 100px;			
+			vertical-align: middle;			
+				
+		}		
+	}
+	.slick-next {
+		position: absolute;
+		right: 0px;
+		top:0;
+		bottom:0;
+		z-index: @zindex-navbar;
+		font-family: FontAwesome;
+		border:0;
+		background: none;
+		border:0;
+		text-indent: -3000px;	
+		width: 100px;
+		height: 100px;		
+		display: block;
+		margin: auto;					
+		&:before{
+			font-family: FontAwesome;
+			content: "\f054";
+			color:@color-white;
+			font-size: 77px;
+			text-indent: 0px;
+		    position: absolute;
+		    left: 0;
+		    top: 0;
+		    display: block;
+		    width: 100px;
+		    height: 100px;			
+			vertical-align: middle;						
+			
+		}
+	}	
+	
+}
