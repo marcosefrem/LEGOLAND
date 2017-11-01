@@ -332,8 +332,8 @@ module.exports = function(grunt) {
 		  production: {
 		    options: {
 		      paths: ["css"],			    
-		      cleancss: true,
-		      yuicompress: true,
+		      cleancss: false,
+		      yuicompress: false,
 		      modifyVars: {
 			      flyingpigsVersion : grunt.template.today('ddmmyyyy')
 			      

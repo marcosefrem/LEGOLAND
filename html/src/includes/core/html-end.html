@@ -1,6 +1,7 @@
 </body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/libraries/jquery.min.js"></script>
 
 <!-- slick slider --->
 
@@ -15,9 +16,36 @@
 				centerPadding: '60px',
 				slidesToShow: 1
 		  });
+		  
+			$('[data-background]').each(function (){
+				
+				backgroundBox = $(this).attr('data-background');
+				$(this).css('background-image','url('+ backgroundBox +')');
+					
+			});	
+		  
+			$('[data-show]').click(function (){
+				
+				$('[data-show]').removeClass('on');
+				$('[data-show]').addClass('off');
+
+				$(this).addClass('on')
+				$(this).removeClass('off')
+				
+				layerShow = $(this).attr('data-show');
+				$('.content-tab').removeClass('on');
+				$('#'+layerShow).addClass('on');
+					
+			});	
+		  		  
+		  
+		  
 		});
 		
 		
-		
+
+
+
+
 	
 </script>

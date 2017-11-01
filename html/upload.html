@@ -47,24 +47,13 @@
 
 		
 		<!-- Código Desarrollo: -->
-		
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">		
 		<link rel="stylesheet" type="text/css" href="css/styles.min.css">
+		<link rel="stylesheet" type="text/css" href="css/styles2.min.css">
 		
-		<script src="js/critical.js"></script>
+		<!--<script src="js/critical.js"></script>-->
 		
-	    <!-- Grunticon -->
-	    
-		<script>
 
-			(function(e){function t(t,n,r,o){"use strict";function a(){for(var e,n=0;u.length>n;n++)u[n].href&&u[n].href.indexOf(t)>-1&&(e=!0);e?i.media=r||"all":setTimeout(a)}var i=e.document.createElement("link"),c=n||e.document.getElementsByTagName("script")[0],u=e.document.styleSheets;return i.rel="stylesheet",i.href=t,i.media="only x",i.onload=o||function(){},c.parentNode.insertBefore(i,c),a(),i}var n=function(r,o){"use strict";if(r&&3===r.length){var a=e.navigator,i=e.Image,c=!(!document.createElementNS||!document.createElementNS("http://www.w3.org/2000/svg","svg").createSVGRect||!document.implementation.hasFeature("http://www.w3.org/TR/SVG11/feature#Image","1.1")||e.opera&&-1===a.userAgent.indexOf("Chrome")||-1!==a.userAgent.indexOf("Series40")),u=new i;u.onerror=function(){n.method="png",n.href=r[2],t(r[2])},u.onload=function(){var e=1===u.width&&1===u.height,a=r[e&&c?0:e?1:2];n.method=e&&c?"svg":e?"datapng":"png",n.href=a,t(a,null,null,o)},u.src="data:image/gif;base64,R0lGODlhAQABAIAAAAAAAP///ywAAAAAAQABAAACAUwAOw==",document.documentElement.className+=" grunticon"}};n.loadCSS=t,e.grunticon=n})(this);(function(e,t){"use strict";var n=t.document,r="grunticon:",o=function(e){if(n.attachEvent?"complete"===n.readyState:"loading"!==n.readyState)e();else{var t=!1;n.addEventListener("readystatechange",function(){t||(t=!0,e())},!1)}},a=function(e){return t.document.querySelector('link[href$="'+e+'"]')},c=function(e){var t,n,o,a,c,i,u={};if(t=e.sheet,!t)return u;n=t.cssRules?t.cssRules:t.rules;for(var s=0;n.length>s;s++)o=n[s].cssText,a=r+n[s].selectorText,c=o.split(");")[0].match(/US\-ASCII\,([^"']+)/),c&&c[1]&&(i=decodeURIComponent(c[1]),u[a]=i);return u},i=function(e){var t,o,a;o="data-grunticon-embed";for(var c in e)if(a=c.slice(r.length),t=n.querySelectorAll(a+"["+o+"]"),t.length)for(var i=0;t.length>i;i++)t[i].innerHTML=e[c],t[i].style.backgroundImage="none",t[i].removeAttribute(o);return t},u=function(t){"svg"===e.method&&o(function(){i(c(a(e.href))),"function"==typeof t&&t()})};e.embedIcons=i,e.getCSS=a,e.getIcons=c,e.ready=o,e.svgLoadedCallback=u,e.embedSVG=u})(grunticon,this);
-
-		
-			grunticon(["css/grunticon/icons.data.svg.css",
-					   "css/grunticon/icons.data.png.css",
-					   "css/grunticon/icons.fallback.css"],
-					   grunticon.svgLoadedCallback );
-		</script>
-	    <!-- / Grunticon -->
 			
 			
         <!-- favicon -->
@@ -188,12 +177,14 @@
 				<div class="nav">
 					<div class="container">
 						<div class="row">
-							<div class="col-sm-12 text-right">
+							<div class="col-sm-12 text-right text-center-mobile">
 								
 								<ul>
-									<li><a href=""><i class="fa fa-child" aria-hidden="true"></i>Zona Principal</a></li>
-									<li><a href=""><i class="fa fa-list-ol" aria-hidden="true"></i>Normas</a></li>
-									<li class="active"><a href=""><i class="fa fa-trophy" aria-hidden="true"></i>Premios</a></li>
+									<li><a href=""><i class="fa fa-home" aria-hidden="true"></i><span class="only-desktop">Inicio</span></a></li>
+									<li class="active"><a href=""><i class="fa fa-cogs" aria-hidden="true"></i><span class="only-desktop">MECÁNICA</span></a></li>
+									<li><a href=""><i class="fa fa-magic" aria-hidden="true"></i><span class="only-desktop">¿Cómo hacer un vIdeo ganador? </span></a></li>
+									<li><a href=""><i class="fa fa-child" aria-hidden="true"></i><span class="only-desktop">Participa</span></a></li>
+									<li><a href=""><i class="fa fa-trophy" aria-hidden="true"></i><span class="only-desktop">Premios</span></a></li>
 			
 								</ul>
 							</div>
@@ -289,31 +280,17 @@
 						
 						</div>
 						<div class="row-no-padding">
-							<div class="col-sm-4 text-center"><i class="fa fa-check lg text-color-black" aria-hidden="true"></i></div>
-							<div class="col-sm-4 text-center"><i class="fa fa-hourglass-end lg text-color-black" aria-hidden="true"></i></div>
-							<div class="col-sm-4 text-center"><i class="fa fa-video-camera lg text-color-black" aria-hidden="true"></i></div>
+							<div class="col-sm-4 text-center"><i class="fa fa-check text-color-black" aria-hidden="true"></i><span>VIDEO APROBADO</span></div>
+							<div class="col-sm-4 text-center"><i class="fa fa-hourglass-end text-color-black" aria-hidden="true"></i><span>VIDEO EN MODERACIÓN</span></div>
+							<div class="col-sm-4 text-center"><i class="fa fa-video-camera text-color-black" aria-hidden="true"></i><span>CARGA TU VIDEO AQUÍ</span></div>
 							
 						</div>		
 						
 						<div class="row">
-							<div class="col-sm-4">
+
+							<div class="col-sm-6">
 								<div class="padding-20">
-								
-								<span class="display-block margin-b-15">Video Aprobado por Lego</span>
-								
-								<div class="margin-b-15">
-									<div class="checkbox">
-										<input id="dropcheck" type="checkbox" aria-invalid="false" >
-										<label for="dropcheck"><a href="">Términos y Condiciones</a></label>
-									</div>
-									<div class="checkbox">
-										<input id="dropcheck2" type="checkbox" aria-invalid="false" >
-										<label for="dropcheck2"><a href="">Política de Privacidad</a></label>
-									</div>								
-								</div>
-								
-								
-							    <span class="display-block margin-b-15">Normas de subida</span>
+							    <span class="display-block margin-b-15">Normas de participación:</span>
 								<ul class="list-unstyled">
 									<li>- Máximo 90 segundos</li>
 									<li>- Máximo 50 Mb</li>
@@ -321,43 +298,90 @@
 									<li>- Cuida lo que se ve</li>
 									<li>- Leer las normas generales</li>
 								</ul>
-								
-								</div>	
-								
-							</div>
-							<div class="col-sm-8">
-								<div class="padding-20">
-								<form>
-									<div class="form-group">
-									      <label class="sr-only" for="inlineFormInputName">Nombre del vídeo</label>
-									      <input type="text" class="form-control" id="" placeholder="Nombre del vídeo">
-									</div>
-									<div class="form-group">
-									      <label class="sr-only" for="inlineFormInputName">Descripción del video. Texto hasta 250 caracteres.</label>
-									      <input type="text" class="form-control" id="" placeholder="Descripción del video. Texto hasta 250 caracteres.">
-									</div>								
-									<div class="bg-white block-tags">
-										
-										<a href="">NinjaGO</a> 
-										<a href="">Elves</a>
-										<a href="">NinjaGO</a>
-										<a href="">NinjaGO</a> 
-										<a href="">Elves</a>
-										<a href="">NinjaGO</a>
-										<a href="">NinjaGO</a> 
-										<a href="">Elves</a>
-										<a href="">NinjaGO</a>
-										<a href="">NinjaGO</a> 
-										<a href="">Elves</a>
-										<a href="">NinjaGO</a>
-																															
-	
-									</div>
-								
-								</form>
 								</div>
+							</div>	
+							<div class="col-sm-6">
+								<div class="padding-20">
+								
+									<div class="margin-b-15">
+										<div class="checkbox">
+											<input id="dropcheck" type="checkbox" aria-invalid="false" >
+											<label for="dropcheck"><a href="">Términos y Condiciones</a></label>
+										</div>
+										<div class="checkbox">
+											<input id="dropcheck2" type="checkbox" aria-invalid="false" >
+											<label for="dropcheck2"><a href="">Política de Privacidad</a></label>
+										</div>								
+									</div>
+								</div>								
 							</div>
 							
+						</div>
+						<div class="row">
+							<form>
+																
+								
+								<div class="col-sm-12">
+									<div class="padding-20">
+
+										<div class="row">
+											<div class="col-sm-4">
+												
+													<div class="form-group">
+													      <label class="sr-only" for="inlineFormInputName">Nombre del vídeo</label>
+													      <input type="text" class="form-control" id="" placeholder="Nombre del vídeo">
+													</div>
+											</div>
+											
+											<div class="col-sm-4">
+												
+													<div class="form-group fileupload">
+													      <label class="sr-only" for="">Adjunta tu video</label>
+													      <input type="file" class="form-control" id="" placeholder="Adjunta tu video">
+													      
+													      <i class="fa fa-search" aria-hidden="true"></i>
+													</div>
+											</div>
+											
+											<div class="col-sm-4">
+												
+													<div class="form-group select">
+													  <select class="form-control" id="sel1">
+													    <option>Selecciona tu país</option>
+													    <option>2</option>
+													    <option>3</option>
+													    <option>4</option>
+													  </select>
+													</div>
+											</div>
+
+										</div>
+										<div class="form-group">
+										      <label class="sr-only" for="inlineFormInputName">Descripción del video. Texto hasta 250 caracteres.</label>
+										      <input type="text" class="form-control" id="" placeholder="Descripción del video. Texto hasta 250 caracteres.">
+										</div>								
+										<div class="bg-white block-tags">
+											
+											<a href="">NinjaGO</a> 
+											<a href="">Elves</a>
+											<a href="">NinjaGO</a>
+											<a href="">NinjaGO</a> 
+											<a href="">Elves</a>
+											<a href="">NinjaGO</a>
+											<a href="">NinjaGO</a> 
+											<a href="">Elves</a>
+											<a href="">NinjaGO</a>
+											<a href="">NinjaGO</a> 
+											<a href="">Elves</a>
+											<a href="">NinjaGO</a>
+																																
+		
+										</div>
+									
+									
+									</div>
+								</div>
+							</form>
 							
 							
 							
@@ -416,7 +440,8 @@
 	    
 </body>
 </html>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<script type="text/javascript" src="js/libraries/jquery.min.js"></script>
 
 <!-- slick slider --->
 
@@ -431,9 +456,36 @@
 				centerPadding: '60px',
 				slidesToShow: 1
 		  });
+		  
+			$('[data-background]').each(function (){
+				
+				backgroundBox = $(this).attr('data-background');
+				$(this).css('background-image','url('+ backgroundBox +')');
+					
+			});	
+		  
+			$('[data-show]').click(function (){
+				
+				$('[data-show]').removeClass('on');
+				$('[data-show]').addClass('off');
+
+				$(this).addClass('on')
+				$(this).removeClass('off')
+				
+				layerShow = $(this).attr('data-show');
+				$('.content-tab').removeClass('on');
+				$('#'+layerShow).addClass('on');
+					
+			});	
+		  		  
+		  
+		  
 		});
 		
 		
-		
+
+
+
+
 	
 </script>
